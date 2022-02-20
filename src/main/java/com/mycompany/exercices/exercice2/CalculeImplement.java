@@ -33,17 +33,41 @@ return c.getIntier1()/c.getEntier2();
 
     @Override
     public double factoriel(CalculeModel c) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+int f=1;
+for(int i=2;i<=c.getIntier1();i++)
+{
+f=f*i;
+// f*=i;
+
+}
+return f;
+
     }
 
     @Override
     public int Pgcd(CalculeModel c) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+int a=c.getIntier1();
+int b=c.getEntier2();
+while(a!=b)
+{
+if(a>b)
+    a=a-b;
+else
+b=b-a;
+}
+return a;
+
+
     }
 
     @Override
     public int Ppcm(CalculeModel c) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+int a=c.getIntier1();
+int b=c.getEntier2();
+int diviseur=Pgcd(c);
+return (a*b)/diviseur;
+
+
     }
     
 }

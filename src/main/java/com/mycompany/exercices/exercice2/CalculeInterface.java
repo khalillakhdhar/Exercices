@@ -12,7 +12,7 @@ public interface CalculeInterface {
     int somme(CalculeModel c);
     int produit(CalculeModel c);
     int soustraction(CalculeModel c);
-    int division(CalculeModel c);
+    double division(CalculeModel c);
     double factoriel(CalculeModel c);
     int Pgcd(CalculeModel c);
     int Ppcm(CalculeModel c);
