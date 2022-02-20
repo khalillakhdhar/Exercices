@@ -9,5 +9,5 @@ package com.mycompany.exercices.test;
  * @author khali
  */
 public class B {
-    
+ // public class B extends A  impossible car A est final   
 }
